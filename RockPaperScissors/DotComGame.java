@@ -53,13 +53,6 @@ class SimpleDotCom  {   	// проверка выстрела
     }
 
     static int randomNum;
-	boolean shotet = false;	
-	public boolean shot(){
-		if (!shotet){
-			shotet = true;
-			return true;
-		}else {return false;}
-	}
     static {
         randomNum = (int) (Math.random ()* 5);
     } 
@@ -84,7 +77,6 @@ class SimpleDotCom  {   	// проверка выстрела
                 if ((guess == cell)&&(regshoot[regshoot_index] == 1)) {
 		    		regshoot[regshoot_index] = 0;
 		    		result = "Boom";
-		    		System.out.println(shotet);
                     numOfHits++;
                     break;
                 
