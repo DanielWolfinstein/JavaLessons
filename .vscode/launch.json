@@ -6,16 +6,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - External Terminal",
+            "name": "CodeLens (Launch) - Output2",
             "request": "launch",
-            "console": "externalTerminal",
-            "mainClass": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Game",
-            "request": "launch",
-            "mainClass": "Game"
+            "mainClass": "Output2",
+            "projectName": "JavaLessons_43e0e718"
         },
         {
             "type": "java",
@@ -25,9 +19,9 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-bot",
+            "name": "Debug (Launch)-Output",
             "request": "launch",
-            "mainClass": "bot"
+            "mainClass": "Output"
         }
     ]
 }
