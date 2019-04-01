@@ -6,10 +6,15 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - External Terminal",
+            "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "console": "externalTerminal",
-            "mainClass": ""
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Output2",
+            "request": "launch",
+            "mainClass": "Output2"
         }
     ]
 }
