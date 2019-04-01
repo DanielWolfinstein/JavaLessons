@@ -13,12 +13,12 @@ class DotComGame {
         boolean isAlive = true;
         while (isAlive == true) {
 
-            String guess = helper.getUserInput("Введите число");
+            String guess = helper.getUserInput("Enter the number");
             System.out.println(guess);
             String result = theDotCom.checkYourSelf(guess);
             numOfGuesses++;
-            if (result.equals("Потопил")) isAlive = false;
-            System.out.println("Вам понадобилось " + numOfGuesses + "попытки(и)");		//вывод попыток
+            if (result.equals("Drown")) isAlive = false;
+            System.out.println("You needed " + numOfGuesses + "attempts");		//вывод попыток
         }
     }
 }
@@ -78,12 +78,12 @@ class SimpleDotCom  {   	// проверка выстрела
         int guess = Integer.parseInt(stringGuess);
         int regshoot_index = serc(locationCells, guess);
 
-        String result = "Промах"; 				// ЗАсчёт выстрела 
+        String result = "Miss"; 				// ЗАсчёт выстрела 
         if (regshoot_index != -1){
             for (int cell : locationCells) {
                 if ((guess == cell)&&(regshoot[regshoot_index] == 1)) {
 		    		regshoot[regshoot_index] = 0;
-		    		result = "Попал";
+		    		result = "Boom";
 		    		System.out.println(shotet);
                     numOfHits++;
                     break;
@@ -92,7 +92,7 @@ class SimpleDotCom  {   	// проверка выстрела
             }
         }
         if (numOfHits == locationCells.length) {
-            result = "Потопил";
+            result = "Drown";
         }
         System.out.println(result);
         System.out.println(numOfHits);

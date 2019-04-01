@@ -11,10 +11,10 @@ class choice{
     static void print_choice(){
         tipocls();
         System.out.flush();  
-        System.out.println("Выберите игру:");
-        System.out.println("1 - Камень ножницы бумага");
-        System.out.println("2 - Морской бой");
-        System.out.println("Quit - Выйти из меню выбора");
+        System.out.println("Select a game:");
+        System.out.println("1 - Rock-Paper-Scissors");
+        System.out.println("2 - Sea battle");
+        System.out.println("Quit - Exit the selection menu");
     }
     static String input_var(){
         Scanner input = new Scanner(System.in);
@@ -48,7 +48,7 @@ class choice{
             }
             else{
                 tipocls();
-                System.out.println("Введено некоректное значение");
+                System.out.println("A non-correct value is entered");
             }
         }
 
