@@ -1,11 +1,13 @@
 class Game{
-    public static void main(String[] args) {
+    void startgame() {
         Weapons Weap_packs = new Weapons();
         String Variant = "";
         Bot enemy = new Bot();
         Player P1 = new Player();
         int wins = 0;
-        while (wins != 3){
+        Boolean triger = false;
+        System.out.println("Starting game");
+        while (wins != 3 || triger){
             P1.player_var();
             Variant = P1.Var;
             enemy.bot_var();
@@ -18,6 +20,7 @@ class Game{
             }
             else if(Variant.equals("QUIT")){
                 System.out.println("Exit the game...");
+                triger = true;
                 break;
             }
             else if(Weap_packs.TryBeat(Variant, Bot_Variant)){
